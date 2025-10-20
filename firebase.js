@@ -8,9 +8,10 @@ const serviceAccount = JSON.parse(
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  storageBucket: "chatapp-bfd8d.firebasestorage.app",  // <-- use appspot.com not firebasestorage.app
+  storageBucket: "chatapp-bfd8d.appspot.com",  // <-- use appspot.com not firebasestorage.app
 });
 
 const bucket = admin.storage().bucket();
 
 export { bucket };
+
